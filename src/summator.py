@@ -1,10 +1,13 @@
-# def summator(a, b):
-#     return a + b
+def summator(a, b):
+    return a + b
 
-class Summator(a, b):
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
-
-    def summator(self):
-        return self.a * self.b
+# class Summator:
+#     def __init__(self, *args):
+#         self.variables = args
+#
+#
+#     def summator(variables):
+#         count = 0
+#         for i in variables:
+#             count + i
+#         return count
