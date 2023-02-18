@@ -12,9 +12,7 @@ def test_one():
     """
     Корректный тест
     """
-
-
-assert summator(10, 20) == 30
+    assert summator(10, 20) == 30
 
 
 @pytest.mark.skip
