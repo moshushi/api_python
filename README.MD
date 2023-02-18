@@ -1,0 +1,1 @@
+Test project for studying pytest
