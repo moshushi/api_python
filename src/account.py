@@ -39,3 +39,4 @@ class Account:
 
     def __del__(self):
         print(f"Account {self.__owner} with {self.__balance} deleted")
+        print(f'{self.__uid}')

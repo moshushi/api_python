@@ -8,10 +8,8 @@ from src.account import Account
 
 @pytest.fixture
 def default_account():
-    return Account("Nakamoto", 0)
-
-
-def tear_down(account):
+    account = Account("Nakamoto", 0)
+    yield account
     del account
 
 
