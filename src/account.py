@@ -37,5 +37,13 @@ class Account:
         """
         return (self.__owner)
 
+    def deposit(self, amount):
+        """
+        Пополнение счёта на указанный депозит
+        :return:
+        """
+        self.__balance = self.balance + amount
+
     def __del__(self):
         print(f"Account {self.__owner} with {self.__balance} deleted")
+        print(f'{self.__uid}')

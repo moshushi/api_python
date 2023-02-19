@@ -1,24 +1,22 @@
 """
 Проверяем корректность создания аккаунта
 """
-from src.account import Account
 
 
-def test_account_create_balance():
+
+def test_account_create_balance(default_account):
     """
     Проверка баланса счёта
     :return:
     """
-    a = Account("Nakamoto", 0)
-    assert a.balance == 0
-    del a
+    assert default_account.balance == 0
+    # del default_account
 
 
-def test_account_create_name():
+def test_account_create_name(default_account):
     """
     Проверка баланса счёта
     :return:
     """
-    a = Account("Nakamoto", 0)
-    assert a.owner == "Nakamoto"
-    del a
+    assert default_account.owner == "Nakamoto"
+    # del default_account
