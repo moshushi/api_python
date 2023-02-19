@@ -1,4 +1,6 @@
-# Файл для фикстур Pytest
+"""
+Файл с фикстурами на проекте
+"""
 import pytest
 
 from src.account import Account

@@ -3,7 +3,6 @@
 """
 
 
-
 def test_account_create_balance(default_account):
     """
     Проверка баланса счёта
