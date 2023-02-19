@@ -1,16 +1,7 @@
 """
 Проверяем корректность создания аккаунта
 """
-import pytest
 
-from src.account import Account
-
-
-@pytest.fixture
-def default_account():
-    account = Account("Nakamoto", 0)
-    yield account
-    del account
 
 
 def test_account_create_balance(default_account):
