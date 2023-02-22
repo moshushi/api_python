@@ -1,6 +1,7 @@
 import requests
 
 URL = "http://jsonplaceholder.typicode.com/posts"
+# URL2 = "http://my-api-example.herokuapp.com/api/info/about"
 
 HEADERS = {
     "Content-type": "application/json; charset=UTF-8"
@@ -13,8 +14,8 @@ DATA = {
 
 response = requests.post(
     URL,
-    HEADERS,
-    DATA
+    headers=HEADERS,
+    json=DATA
 )
 
 print(response.json())
